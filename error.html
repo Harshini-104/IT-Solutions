@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404 - Page Not Found</title>
+  <link rel="stylesheet" href="404.css">
+</head>
+<body>
+
+  <section class="error-page">
+    <div class="error-container">
+
+      <h1>404</h1>
+      <h2>Oops! Page Not Found</h2>
+      <p>
+        The page you are looking for might have been removed, had its name changed,
+        or is temporarily unavailable.
+      </p>
+
+      <a href="index.html" class="btn-home">Go Back Home</a>
+
+    </div>
+  </section>
+
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Section */
+.error-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.error-container h1 {
+  font-size: 180px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #00e0ff, #0077ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+
+.error-container h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.error-container p {
+  font-size: 16px;
+  color: #d0e4ea;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.btn-home {
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #00e0ff, #0077ff);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-home:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 224, 255, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .error-container h1 {
+    font-size: 120px;
+  }
+
+  .error-container h2 {
+    font-size: 24px;
+  }
+}
+
+.error-container h1 {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+  </style>
+</body>
+</html>
